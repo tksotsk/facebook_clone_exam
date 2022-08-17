@@ -15,26 +15,7 @@
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: "#{key}") %>
       <% end %>
-
-    <%# ==========ここから追加する========== %>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <%= link_to "", new_session_path, class: "navbar__brand navbar__mainLogo" %>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-md-auto align-items-center">
-            <li>
-              <%= link_to "投稿", user_path(current_user.id), class: "btn btn-primary" %>
-            </li>
-            <li>
-              <%= link_to "", "#", class: "nav-link commonNavIcon profile-icon" %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      
       <% if logged_in? %>
         <%= link_to "マイページ", user_path(current_user.id) %>
         <%= link_to "ログアウト", session_path(current_user.id), method: :delete %>
