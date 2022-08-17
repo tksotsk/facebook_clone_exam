@@ -3,6 +3,7 @@ class PicturesController < ApplicationController
   
   def index
     @pictures = Picture.where(user_id: current_user.id)
+    @user = current_user
   end
 
   def show
