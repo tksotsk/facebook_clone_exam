@@ -29,7 +29,7 @@
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ ORDER 
     CUSTOMER {
         string name
         string custNumber
