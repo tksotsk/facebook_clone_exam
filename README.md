@@ -21,3 +21,26 @@
 - privateより下の行はprivateと同じレベルのインデントにする
 - updateなどの記述の際、バリデーションが発火した時の処理も考慮しておくこと。（レンダリングするviewが見つけられなくてエラーになったりしないように注意する）
 - 追加するライブラリは、bootstrap、jquery-rails、bcrypt、carrier_wave、デバック関係のみに限定すること
+
+
+
+
+***
+
+
+users ||--o{ articles: ""
+
+users {
+  string name
+  string email
+  integer age
+}
+
+articles {
+  string title
+  text text
+}
+
+
+
+
