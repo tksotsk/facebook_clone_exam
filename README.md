@@ -39,7 +39,7 @@ erDiagram
     TASK {
         string name
         string email
-        integer user_id
+        int user_id
     }
    
 ```
