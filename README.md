@@ -30,7 +30,7 @@
 ```mermaid
 erDiagram
     USER ||--o{ TASK :places
-    CUSTOMER {
+    USER {
         string name
         string email
        
