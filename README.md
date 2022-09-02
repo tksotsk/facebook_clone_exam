@@ -29,14 +29,14 @@
 
 ```mermaid
 erDiagram
-    USER ||--o{ TASK
+    CUSTOMER ||--o{ ORDER : places
     CUSTOMER {
         string name
         string custNumber
         string sector
     }
     
-    TASK {
+    ORDER {
         int orderNumber
         string deliveryAddress
     }
