@@ -28,18 +28,10 @@
 ***
 
 ```mermaid
-users ||--o{ articles: ""
-
-users {
-  string name
-  string email
-  integer age
-}
-
-articles {
-  string title
-  text text
-}
+classDiagram
+    Customer "1" --> "*" Ticket
+    Student "1" --> "1..*" Course
+    Galaxy --> "many" Star : Contains
 ```
 ```mermaid
 graph TD;
