@@ -32,14 +32,13 @@ erDiagram
     USER ||--o{ TASK
     CUSTOMER {
         string name
-        string email
-       
+        string custNumber
+        string sector
     }
     
     TASK {
-        string name
-        string email
-        int user_id
+        int orderNumber
+        string deliveryAddress
     }
    
 ```
