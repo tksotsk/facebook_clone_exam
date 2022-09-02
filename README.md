@@ -29,20 +29,18 @@
 
 ```mermaid
 erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
     
-    CAR {
-        string allowedDriver FK "The license of the allowed driver"
-        string registrationNumber
-        string make
-        
+    ORDER {
+        int orderNumber
+        string deliveryAddress
     }
-    PERSON ||--o{ CAR
-    PERSON {
-        string driversLicense PK "The license #"
-        string firstName
-        string lastName
-        
-    }
+   
 ```
 ```mermaid
 graph TD;
