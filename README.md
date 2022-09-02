@@ -27,7 +27,7 @@
 
 ***
 
-
+```mermaid
 users ||--o{ articles: ""
 
 users {
@@ -40,7 +40,7 @@ articles {
   string title
   text text
 }
-
+```
 
 
 
