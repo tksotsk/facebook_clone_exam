@@ -29,16 +29,17 @@
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ ORDER 
+    USER ||--o{ TASK :places
     CUSTOMER {
         string name
-        string custNumber
-        string sector
+        string email
+       
     }
     
-    ORDER {
-        int orderNumber
-        string deliveryAddress
+    TASK {
+        string name
+        string email
+        int user_id
     }
    
 ```
